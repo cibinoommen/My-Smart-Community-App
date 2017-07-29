@@ -3,40 +3,44 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_hom"
+            android:title="Home" />
+        <item
             android:id="@+id/idea_platform"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/idea"
             android:title="Idea Platform" />
         <item
             android:id="@+id/voln_platform"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_accessibilitys"
             android:title="Volunteer Platform" />
         <item
             android:id="@+id/bus_enablers"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_business"
             android:title="Business Enablers" />
         <item
             android:id="@+id/infra_logistics"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_wor"
             android:title="Infrastructure and Logistics" />
         <item
             android:id="@+id/active_wellbeing"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/wellbeing"
             android:title="Active Well-Being" />
         <item
             android:id="@+id/safety_security"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/safety"
             android:title="Safety and Security" />
         <item
             android:id="@+id/sustainability"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/sustainaility"
             android:title="Sustainability" />
         <item
             android:id="@+id/youth_engage"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/youth_icon"
             android:title="Youth Engagements" />
         <item
             android:id="@+id/govt_bridge"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/govt"
             android:title="Government Bridge" />
     </group>
 
@@ -44,7 +48,7 @@
         <menu>
             <item
                 android:id="@+id/contact_us"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_contact"
                 android:title="Contact Us" />
         </menu>
     </item>

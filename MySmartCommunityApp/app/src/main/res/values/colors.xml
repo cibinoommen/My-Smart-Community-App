@@ -3,5 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="blue">#3c8dbc</color>
+    <color name="blue">#0099FF</color>
+    <color name="grey">#ecf0f5</color>
+    <color name="dark_blue">#1999ed</color>
+    <color name="tab_indi">#0569ab</color>
+
 </resources>
