@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
+            android:id="@+id/lnrIdeasHeader"
             android:orientation="horizontal"
             android:background="@color/grey">
 
@@ -22,6 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
+                android:textStyle="bold"
                 android:gravity="center_vertical|center_horizontal|center"
                 android:text="Top rated Ideas" />
 
@@ -255,11 +257,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:visibility="gone"
         android:id="@+id/add_new">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
+        android:id="@+id/lnrAddHeader"
         android:orientation="horizontal"
         android:background="@color/grey">
 
@@ -267,6 +271,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
+            android:textStyle="bold"
             android:gravity="center_vertical|center_horizontal|center"
             android:text="Share your ideas with us" />
         </LinearLayout>
@@ -330,7 +335,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/register_here"
+                    android:id="@+id/register_idea"
                     style="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

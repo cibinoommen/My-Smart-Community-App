@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import com.govhack.mysmartcommunityapp.adapter.SlidingAdapter;
 import com.govhack.mysmartcommunityapp.adapter.ViewPagerAdapter;
 import com.govhack.mysmartcommunityapp.fragments.BusinessEnablers;
+import com.govhack.mysmartcommunityapp.fragments.GovernmentBridge;
 import com.govhack.mysmartcommunityapp.fragments.HomeFragment;
 import com.govhack.mysmartcommunityapp.fragments.IdeaPlatform;
 import com.govhack.mysmartcommunityapp.fragments.VolunteerPlatform;
@@ -43,13 +44,6 @@ public class MainActivity extends AppCompatActivity
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setupViewPager(viewPager);
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -77,15 +71,12 @@ public class MainActivity extends AppCompatActivity
         adapter.addFrag(new IdeaPlatform(), "Ideas");
         adapter.addFrag(new VolunteerPlatform(), "Volunteers");
         adapter.addFrag(new BusinessEnablers(), "Business Enablers");
-        adapter.addFrag(new IdeaPlatform(), "Idea Platform");
-        adapter.addFrag(new VolunteerPlatform(), "Volunteer Platform");
-        adapter.addFrag(new BusinessEnablers(), "Business Enablers");
-        adapter.addFrag(new IdeaPlatform(), "Idea Platform");
-        adapter.addFrag(new VolunteerPlatform(), "Volunteer Platform");
-        adapter.addFrag(new BusinessEnablers(), "Business Enablers");
-        adapter.addFrag(new IdeaPlatform(), "Idea Platform");
-        adapter.addFrag(new VolunteerPlatform(), "Volunteer Platform");
-        adapter.addFrag(new BusinessEnablers(), "Business Enablers");
+        adapter.addFrag(new IdeaPlatform(), "Infrastructure");
+        adapter.addFrag(new VolunteerPlatform(), "Active Well-being");
+        adapter.addFrag(new BusinessEnablers(), "Safety and Security");
+        adapter.addFrag(new IdeaPlatform(), "Sustainability");
+        adapter.addFrag(new VolunteerPlatform(), "Youth Engagements");
+        adapter.addFrag(new GovernmentBridge(), "Government Bridge");
         viewPager.setAdapter(adapter);
     }
     @Override
